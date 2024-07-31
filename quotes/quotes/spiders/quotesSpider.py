@@ -4,13 +4,18 @@ class QuotesspiderSpider(scrapy.Spider):
     name = "quotesSpider"
     fn = "quotes.toscrape"
     dn = fn + ".com"
+    genre = ""
     allowed_domains = [dn]
-    start_urls = ["https://quotes.toscrape.com/page/1"]
-    scope = [
-        "https://" + dn + "/page/2",
-        "https://" + dn + "/page/3",
-        "https://" + dn + "/page/4"
-    ]
+    start_urls = ["https://quotes.toscrape.com" + genre + "/page/1"]
+    # scope = [
+    #     "https://" + dn + genre + "/page/2",
+    #     # "https://" + dn + genre + "/page/3",
+    #     # "https://" + dn + genre + "/page/4"
+    # ]
+    scope = []
+    for i in range (0, 11):
+
+        scope.append("https://" + dn + genre + "/page/"+str(i))
 
     def start_requests(self):
         urls = self.start_urls + self.scope
