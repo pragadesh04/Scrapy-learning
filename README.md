@@ -1,5 +1,5 @@
-# Scrapy-learning
 <img align="right" src="https://i.giphy.com/LaVp0AyqR5bGsC5Cbm.webp" width="200" height="200">
+<h1> Scrapy-learning</h1>
 This repository, "Scrapy-learning", is a collection of web scraping projects using the Scrapy framework in Python. It serves as a learning resource for those interested in web scraping and data extraction using Scrapy.
 
 ## Table of Contents
