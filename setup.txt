@@ -1,0 +1,7 @@
+pip install scrapy
+scrapy startproject <ProjectName>
+scrapy genspider <someName> <webUrl>
+
+change someName.py file into spiders folder
+
+scrapy crawl <someName>
